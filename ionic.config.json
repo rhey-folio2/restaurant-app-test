@@ -1,0 +1,7 @@
+{
+  "name": "restoapp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

@@ -1,0 +1,23 @@
+ion-content{
+    .em-a{
+        text-align: center;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        margin: auto;
+        width: 80%;
+    }
+
+    ion-card{
+        .ri-a{
+            height: 200px;
+            overflow: hidden;
+
+            img{
+                transform: translateY(-20%);
+            }
+        }
+    }
+}

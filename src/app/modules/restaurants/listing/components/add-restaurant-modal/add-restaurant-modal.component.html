@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-toolbar mode="md">
+    <ion-title>
+      Add Restaurant
+    </ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="close()">
+        <ion-icon slot="icon-only" name="close"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <div class="ion-padding">
+    <ion-list>
+      <ion-item>
+        <ion-label position="floating">Name</ion-label>
+        <ion-input [(ngModel)]="name"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Address</ion-label>
+        <ion-input [(ngModel)]="address"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Description</ion-label>
+        <ion-textarea [(ngModel)]="description" rows="4"></ion-textarea>
+      </ion-item>
+    </ion-list>
+  </div>
+  <div class="ion-text-center lg-a">
+    <ion-text color="medium" (click)="upload()">
+      <h4 *ngIf="!image_url">Logo</h4>
+      <img *ngIf="image_url" [src]="sanitize(image_url)" />
+      <p>Click to add / replace logo</p>
+    </ion-text>
+  </div>
+</ion-content>
+<ion-footer>
+  <ion-toolbar mode="md">
+    <ion-buttons slot="end">
+      <ion-button color="primary" [disabled]="!isValid()" (click)="save()">
+        Save
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-footer>
+<input type="file" style="display: none;" (change)="onFileUpload($event)" class="file-input" />
