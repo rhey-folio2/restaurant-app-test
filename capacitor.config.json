@@ -1,5 +1,5 @@
 {
-	"appId": "io.ionic.starter",
+	"appId": "com.restaurantapp.mobile",
 	"appName": "restoapp",
 	"webDir": "www",
 	"bundledWebRuntime": false

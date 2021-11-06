@@ -19,7 +19,13 @@
         </div>
         <ion-card-header>
           <ion-card-title>{{ item.name }}</ion-card-title>
-          <ion-card-subtitle>{{ item.address }}</ion-card-subtitle>
+          <ion-card-subtitle>
+            <ion-icon name="location-outline"></ion-icon> {{ item.address }}
+          </ion-card-subtitle>
+          <ion-card-subtitle>
+            <ion-icon name="qr-code-outline"></ion-icon>
+            {{ item.id }}
+          </ion-card-subtitle>
         </ion-card-header>
         <ion-card-content>
           <div class="cd-a">
