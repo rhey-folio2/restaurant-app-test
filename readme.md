@@ -1,8 +1,10 @@
 # Restourant App
 This is a test project build by ionic / angular / docker to demonstrate basic offline features of restaurant / menu management
 
+## Setup
+Run npm install and execute the following commands available below.
 
-## Scripts
+## Available Commands
 
 | Script       | Description                                  | Example                             |
 | ------------ | -------------------------------------------- | ----------------------------------- |
