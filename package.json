@@ -5,11 +5,13 @@
   "homepage": "https://ionicframework.com/",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "start": "ng serve --open",
+    "build": "ng build --prod",
+    "build:docker": "docker image build -t restaurant-app .",
+    "start:docker": "docker run -p 3000:80 --rm restaurant-app"
   },
   "private": true,
   "dependencies": {
